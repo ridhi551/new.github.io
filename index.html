@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="circle" data-splitting>
+      -ABISHEK-RUHANI-UPTO-INFINITY-
+
+    </div>
+
+    
+
+    <script src="splitting.js"></script>
+    <script> Splitting(); </script>
+
+    <script>
+        let circle=document.querySelector('.circle')
+        window.onmousemove=function(e){
+            let x = e.clientX/-2;
+            circle.style.transform = "perspective(1000px) rotateY(" + x + "deg) rotateX(15deg)";
+        }
+    </script>
+    
+    
+</body>
+</html>
+
